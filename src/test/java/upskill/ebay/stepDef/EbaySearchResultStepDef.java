@@ -23,5 +23,12 @@ public class EbaySearchResultStepDef {
 	public void item_list_should_have_products_of(String brand) throws Throwable {
 		EbaySearchResultActionobj.VerifyBrandList(brand);
 	}
+	
+	@When("^Select the first shirt on item list$")
+	public void select_the_first_shirt_on_item_list() throws Throwable {
+		EbaySearchResultActionobj.SelectShirt();
+		EbaySearchResultActionobj.SwitchNewWindow();
+	   
+	}
 
 }

@@ -25,6 +25,9 @@ public void searchItems(String Items) {
 	EbayHomePageLocatorobj.btnSearch.click();
 	
 }
-
+//public void searchShirt() {
+//	EbayHomePageLocatorobj.txtbxSearch.sendKeys("Big & Tall Cotton Tee");
+//	EbayHomePageLocatorobj.btnSearch.click();
+//}
 
 }

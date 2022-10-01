@@ -26,4 +26,11 @@ public void search_for(String Items) throws Throwable {
   
 }
 
+@Given("^Search for Shirt$")
+public void search_for_Shirt() throws Throwable {
+	EbayHomepageActionobj.searchItems("Big & Tall Cotton Tee");
+    
+}
+
+
 }

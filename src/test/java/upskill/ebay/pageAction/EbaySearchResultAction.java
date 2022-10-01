@@ -1,5 +1,7 @@
 package upskill.ebay.pageAction;
 
+import java.util.Set;
+
 import org.junit.Assert;
 import org.openqa.selenium.support.PageFactory;
 
@@ -53,5 +55,27 @@ public class EbaySearchResultAction {
 		 else {
 			 System.out.println("Invalid Entry");
 	  }
+	  
   }
+  
+  public void SelectShirt() {
+	  EbaySearchResultLocatorobj.linkShirt.click();
+  }
+  
+  public void SwitchNewWindow() {
+	  
+	  for (String winhandle : SetupDriver.driver.getWindowHandles()) {
+		  SetupDriver.driver.switchTo().window(winhandle);
+	  }
+	  
+	  
+		/*
+		 * Set<String> AllWindowHandles = SetupDriver.driver.getWindowHandles(); String
+		 * window1 = (String) AllWindowHandles.toArray()[0]; String window2 = (String)
+		 * AllWindowHandles.toArray()[1]; SetupDriver.driver.switchTo().window(window2);
+		 */
+	  
+  }
+  
+ 
 }

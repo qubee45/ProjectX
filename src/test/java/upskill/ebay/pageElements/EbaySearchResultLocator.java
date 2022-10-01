@@ -23,4 +23,6 @@ public class EbaySearchResultLocator {
 	@FindBy (xpath="//input[@aria-label='Unbranded']")
 		 public WebElement cbxUnbranded;
 		
+	@FindBy(xpath="//span[contains(text(), 'Big & Tall Cotton Tee.')]")
+		public WebElement linkShirt;
 }
