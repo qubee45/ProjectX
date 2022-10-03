@@ -1,5 +1,6 @@
 package upskill.ebay.pageAction;
 
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
 
 import upskill.ebay.pageElements.EbayHomePageLocator;
@@ -29,5 +30,19 @@ public void searchItems(String Items) {
 //	EbayHomePageLocatorobj.txtbxSearch.sendKeys("Big & Tall Cotton Tee");
 //	EbayHomePageLocatorobj.btnSearch.click();
 //}
+
+public void MyEbay() throws Exception {
+	
+	Actions actions = new Actions(SetupDriver.driver);
+	
+	actions.moveToElement(EbayHomePageLocatorobj.linkMyEbay);
+	actions.perform();
+	Thread.sleep(10000);
+	
+}
+
+public void Summary() {
+	EbayHomePageLocatorobj.linkSummary.click();
+}
 
 }

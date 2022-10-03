@@ -12,5 +12,9 @@ public class EbayHomePageLocator {
 	public WebElement btnSearch;
 	
 	
+	@FindBy(xpath="//a[@title='My eBay']")
+	public WebElement linkMyEbay;
 	
+	@FindBy(xpath="//a[contains(text(),'Summary')]")
+	public WebElement linkSummary;
 }
