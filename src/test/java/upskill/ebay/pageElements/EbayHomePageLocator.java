@@ -17,4 +17,6 @@ public class EbayHomePageLocator {
 	
 	@FindBy(xpath="//a[contains(text(),'Summary')]")
 	public WebElement linkSummary;
+	
+	
 }

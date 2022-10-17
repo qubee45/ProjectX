@@ -36,12 +36,12 @@ public void search_for_Shirt() throws Throwable {
 
 @When("^Mouse Hover to MyEbay Summary$")
 public void mouse_Hover_to_MyEbay_Summary() throws Throwable {
-  
+	EbayHomepageActionobj.MyEbay();
 }
 
 @Then("^Click on Summary$")
 public void click_on_Summary() throws Throwable {
-
+	EbayHomepageActionobj.Summary();
 }
 
 
