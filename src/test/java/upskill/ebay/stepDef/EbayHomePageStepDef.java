@@ -18,6 +18,8 @@ public void open_Ebay_Homepage() throws Throwable {
 @When("^Search for shoes$")
 public void search_for_shoes() throws Throwable {
 	EbayHomepageActionobj.searchShoes();
+	
+	//EbayHomepageActionobj.searchShoesFromExcelFile();
    
 }
 

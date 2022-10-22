@@ -10,6 +10,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
 
 import upskill.ebay.pageElements.EbayHomePageLocator;
+import upskill.utilities.ReadExcelFile;
 import upskill.utilities.SetupDriver;
 
 public class EbayHomepageAction {
@@ -25,7 +26,15 @@ public EbayHomepageAction() {
 public void searchShoes() {
 	EbayHomePageLocatorobj.txtbxSearch.sendKeys("Shoes");
 	EbayHomePageLocatorobj.btnSearch.click();
+	
+	
 }
+
+public void searchShoesFromExcelFile() throws Exception {
+	EbayHomePageLocatorobj.txtbxSearch.sendKeys(ReadExcelFile.getMapData("Search"));
+	EbayHomePageLocatorobj.btnSearch.click();
+	}
+
 
 public void searchItems(String Items) {
 	EbayHomePageLocatorobj.txtbxSearch.sendKeys(Items);

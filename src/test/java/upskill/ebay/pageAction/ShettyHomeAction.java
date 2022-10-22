@@ -23,6 +23,7 @@ public class ShettyHomeAction {
 	}
 	
 	public void loadHomepage() {
+		//Load the page without touching utilities 
 		SetupDriver.driver.get("https://rahulshettyacademy.com/AutomationPractice/");
 		
 		
@@ -39,6 +40,7 @@ public class ShettyHomeAction {
 			for(int i=0; i<(framelist.size()); i++ ) {
 				SetupDriver.driver.switchTo().frame(i);
 				
+				// If an exception error occurs, we can use try...catch to catch the error and execute some code to handle it
 				try {
 					ShettyHomeLocatorObj.LinkShettyHome.click();
 					}catch(Exception e) {

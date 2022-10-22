@@ -5,7 +5,7 @@ import org.openqa.selenium.support.FindBy;
 
 public class ShettyHomeLocator {
 	
-	@FindBy(xpath="//*[contains(text(), 'Home')]")
+	@FindBy(xpath="//a[contains(text(), 'Home')]")
 	public WebElement LinkShettyHome;
 
 }
